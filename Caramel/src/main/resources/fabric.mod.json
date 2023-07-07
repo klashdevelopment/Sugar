@@ -1,38 +1,36 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "caramel",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Caramel",
+  "description": "A QOL and game feature enhancement mod. Part of Sugar.",
   "authors": [
-    "Me!"
+    "KlashDevelopment",
+    "GavinGoGaming"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://pages.klash.dev/sugar",
+    "sources": "https://github.com/klashdevelopment/Sugar"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "GPL-2.0",
+  "icon": "assets/caramel/caramel.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "dev.klash.sugar.caramel.CaramelMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "caramel.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.14.11",
     "fabric-api": "*",
-    "minecraft": "~1.19.3",
+    "minecraft": "~1.20.1",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
